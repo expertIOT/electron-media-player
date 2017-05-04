@@ -1,0 +1,12 @@
+# Packages
+node_modules
+bower_components
+jspm_packages
+
+# Artifacts
+out
+
+# IDEs
+*.sublime-project
+*.sublime-workspace
+.vscode
