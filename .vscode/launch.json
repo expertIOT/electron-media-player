@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Launch (Render Process)",
+        "type": "chrome",
+        "request": "launch",
+        "runtimeExecutable": "${workspaceRoot}/scripts/launch.sh",
+        "windows": {
+            "runtimeExecutable": "${workspaceRoot}/scripts/launch.cmd"
+        },
+        "runtimeArgs": [
+            "${workspaceRoot}"
+        ],
+        "urlFilter": "file://${workspaceRoot}/src/renderer/index.html",
+        "sourceMaps": true,
+        "webRoot": "${workspaceRoot}"
+    }, {
+        "name": "Attach to Render Process",
+        "type": "chrome",
+        "request": "attach",
+        "url": "file://${workspaceRoot}/src/renderer/index.html",
+        "port": 9222,
+        "sourceMaps": true,
+        "webRoot": "${workspaceRoot}"
+    }],
+    "compounds": []
+}

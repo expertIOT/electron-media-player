@@ -1,0 +1,3 @@
+SET BASEDIR=%~dp0
+SET BASEDIRSHORT=%BASEDIR:~0,-1%
+node "%BASEDIRSHORT%/launch.js" %*
